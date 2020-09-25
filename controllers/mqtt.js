@@ -2,8 +2,8 @@ const mqtt = require("mqtt");
 const sensor = require("../models/sensor");
 var socket_client = require("socket.io-client");
 var socket = socket_client("http://localhost:3000");
-var MQTT_TOPIC = "gsnlv3/v";
-var MQTT_ADDR = "mqtt://103.140.38.24";
+var MQTT_TOPIC = "name publish";
+var MQTT_ADDR = "mqtt://IP address";
 
 module.exports.getData = async function (req, res, next) {
   var client = await mqtt.connect(MQTT_ADDR, {
