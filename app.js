@@ -17,7 +17,7 @@ const mqtt = require("mqtt");
 // connect mongodb by mongoose
 
 const uris =
-  "mongodb+srv://anhpv:anhpv@cluster0.et3z1.mongodb.net/mqtt?retryWrites=true&w=majority";
+  "mongodb+srv://anhpv:anhpv@url";
 mongoClient
   .connect(uris, {
     useCreateIndex: true,
